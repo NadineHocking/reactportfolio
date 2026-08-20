@@ -9,6 +9,7 @@
   --signal: #3fa796;
   --line: #d7e0ee;
   --danger: #d1584a;
+  --radial-bg: radial-gradient(50% 50% at 50% 50%, rgba(237, 215, 255, 0.10) 8%, rgba(224, 224, 255, 0.50) 46.5%, rgba(200, 202, 255, 0.30) 93.5%);
 
   --font-display: 'Space Grotesk', system-ui, sans-serif;
   --font-body: 'IBM Plex Sans', system-ui, sans-serif;
@@ -39,7 +40,7 @@ html {
 
 body {
   margin: 0;
-  background: var(--paper);
+  background: var(--radial-bg);
   color: var(--ink);
   font-family: var(--font-body);
   line-height: 1.55;
@@ -135,7 +136,7 @@ p {
   position: sticky;
   top: 0;
   z-index: 40;
-  background: rgba(243, 246, 251, 0.92);
+  /* background: rgba(243, 246, 251, 0.92); */
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--line);
 }
@@ -275,7 +276,7 @@ p {
 
 .hero {
   padding: 72px 0 56px;
-  border-bottom: 1px solid var(--line);
+  /* border-bottom: 1px solid var(--line); */
 }
 
 .hero-grid {
@@ -296,8 +297,8 @@ p {
 
 .hero-lead {
   color: var(--slate);
-  font-size: 1.08rem;
-  max-width: 46ch;
+  font-size: 1.1rem;
+  max-width: 600px;
 }
 
 .hero-actions {
@@ -420,7 +421,7 @@ p {
   background: rgba(63, 167, 150, 0.1);
 }
 
-/* ---------- Build log / Projects ---------- */
+/* ---------- Projects ---------- */
 
 .filter-row {
   display: flex;
