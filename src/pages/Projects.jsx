@@ -21,7 +21,6 @@ export default function Projects() {
           <h2>Latest repositories</h2>
           <p>Pulled directly from the GitHub REST API, so this list stays current automatically.</p>
         </div>
-        <GitHubRepos />
       </div>
     </section>
   )
