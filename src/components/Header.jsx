@@ -16,7 +16,7 @@ export default function Header() {
     <header className="site-header">
       <div className="wrap">
         <NavLink to="/" className="brand" onClick={closeMenu}>
-          Jordan Ellis
+          Nadine Hocking
           <span className="brand-tag">dev.log</span>
         </NavLink>
 
