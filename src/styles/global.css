@@ -4,12 +4,14 @@
   --ink: #1b2a4a;
   --paper: #f3f6fb;
   --paper-raised: #ffffff;
-  --slate: #5b6b82;
+  --slate: #25263c;
   --amber: #e8a33d;
   --signal: #3fa796;
   --line: #d7e0ee;
   --danger: #d1584a;
   --radial-bg: radial-gradient(50% 50% at 50% 50%, rgba(237, 215, 255, 0.10) 8%, rgba(224, 224, 255, 0.50) 46.5%, rgba(200, 202, 255, 0.30) 93.5%);
+  --multi: linear-gradient(90deg, #ff86eb 0%, #e786ff 20%, #dc6bf8 40%, #8b6bf8 100%) no-repeat;
+  --accent1: #b950bf;
 
   --font-display: 'Space Grotesk', system-ui, sans-serif;
   --font-body: 'IBM Plex Sans', system-ui, sans-serif;
@@ -61,7 +63,7 @@ button {
 }
 
 :focus-visible {
-  outline: 2px solid var(--amber);
+  outline: 2px solid var(--accent1);
   outline-offset: 3px;
 }
 
@@ -71,8 +73,27 @@ h1, h2, h3, h4 {
   letter-spacing: -0.01em;
 }
 
+h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+h2 {
+  font-size: clamp(1.25rem, 4vw, 2.5rem);
+  line-height: 1.1;
+}
+
+h3 {
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+}
+
+h4 {
+  font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+}   
+
 p {
   margin: 0 0 1em;
+  font-size: 1.125rem;
+  line-height: 1.5;
 }
 
 .wrap {
@@ -115,7 +136,7 @@ p {
   font-size: 0.78rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--signal);
+  color: var(--accent1);
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -126,9 +147,27 @@ p {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: var(--signal);
-  box-shadow: 0 0 0 3px rgba(63, 167, 150, 0.18);
+  background: var(--accent1);
+  box-shadow: 0 0 0 3px rgba(167, 63, 138, 0.18);
 }
+/* ---------- Spacing ---------- */
+.m-t-1 {
+  margin-top: 1em;
+}
+
+.m-t-2 {
+  margin-top: 2em;
+}
+
+.mb-1 {
+  margin-bottom: 1em;
+}
+
+.mb-2 {
+  margin-bottom: 2em;
+}
+
+
 
 /* ---------- Header ---------- */
 
@@ -159,6 +198,7 @@ p {
   color: var(--ink);
 }
 
+
 .brand .brand-tag {
   font-family: var(--font-mono);
   font-size: 0.68rem;
@@ -179,6 +219,9 @@ p {
 }
 
 .nav-links a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
   text-decoration: none;
   font-family: var(--font-mono);
   font-size: 0.85rem;
@@ -186,6 +229,11 @@ p {
   padding: 8px 14px;
   border-radius: 6px;
   transition: color 0.15s ease, background 0.15s ease;
+}
+
+.nav-icon {
+  font-size: 18px;
+  color: var(--accent1);
 }
 
 .nav-links a:hover {
@@ -287,12 +335,13 @@ p {
 }
 
 .hero h1 {
-  font-size: clamp(2.1rem, 4vw, 3.2rem);
+    
+  font-size: 3rem;
   line-height: 1.08;
 }
 
 .hero .accent {
-  color: var(--signal);
+  color: var(--accent1);
 }
 
 .hero-lead {
@@ -315,6 +364,9 @@ p {
 }
 
 .hero-social a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
   font-family: var(--font-mono);
   font-size: 0.78rem;
   color: var(--slate);
@@ -323,8 +375,13 @@ p {
 }
 
 .hero-social a:hover {
-  color: var(--signal);
-  border-color: var(--signal);
+  color: var(--accent1);
+  border-color: var(--accent1);
+}
+
+.hero-social .material-symbols-outlined {
+  font-size: 16px;
+  color: var(--accent1);
 }
 
 .terminal-card {
@@ -356,11 +413,11 @@ p {
 }
 
 .terminal-card .prompt {
-  color: var(--amber);
+  color: var(--accent1);
 }
 
 .terminal-card .ok {
-  color: var(--signal);
+  color: var(--accent1);
 }
 
 /* ---------- Sections ---------- */
@@ -371,18 +428,25 @@ p {
 
 .section-head {
   margin-bottom: 32px;
-  max-width: 62ch;
+  max-width: 600px;
 }
 
-.section-head h2 {
+/* .section-head h2 {
   font-size: clamp(1.5rem, 3vw, 2rem);
-}
+} */
 
 .section-head p {
   color: var(--slate);
 }
 
 /* ---------- Skills grid ---------- */
+
+.gcard {
+  background: var(--paper-raised);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 18px;
+}
 
 .skills-grid {
   display: grid;
@@ -403,22 +467,22 @@ p {
 }
 
 .skill-card p {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: var(--slate);
   margin-bottom: 0;
 }
 
 .skill-card .skill-icon {
-  color: var(--signal);
-  font-size: 26px;
-  margin-bottom: 10px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 10px;
-  background: rgba(63, 167, 150, 0.1);
+    color: var(--accent1);
+    font-size: 26px;
+    margin-bottom: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    background: rgb(155 63 167 / 10%);
 }
 
 /* ---------- Projects ---------- */
@@ -474,7 +538,7 @@ p {
   height: 12px;
   border-radius: 50%;
   background: var(--paper-raised);
-  border: 2px solid var(--signal);
+  border: 2px solid var(--accent1);
 }
 
 .log-card {
@@ -488,8 +552,8 @@ p {
 
 .log-card:hover,
 .log-card:focus-visible {
-  border-color: var(--signal);
-  box-shadow: 0 8px 24px rgba(27, 42, 74, 0.08);
+  border-color: var(--accent1);
+  box-shadow: 0 8px 24px rgba(74, 27, 66, 0.08);
 }
 
 .log-card-top {
@@ -503,7 +567,7 @@ p {
 .log-week {
   font-family: var(--font-mono);
   font-size: 0.78rem;
-  color: var(--amber);
+  color: var(--accent1);
   font-weight: 600;
 }
 
@@ -535,8 +599,8 @@ p {
 .tag {
   font-family: var(--font-mono);
   font-size: 0.72rem;
-  background: rgba(63, 167, 150, 0.1);
-  color: var(--signal);
+  background: rgba(167, 63, 138, 0.1);
+  color: var(--accent1);
   padding: 3px 9px;
   border-radius: 999px;
 }
@@ -577,7 +641,7 @@ p {
 }
 
 .repo-card h4 a:hover {
-  color: var(--signal);
+  color: var(--accent1);
 }
 
 .repo-card p {
@@ -650,7 +714,7 @@ p {
 
 .field input:focus,
 .field textarea:focus {
-  outline: 2px solid var(--amber);
+  outline: 2px solid var(--accent1);
   outline-offset: 1px;
 }
 
@@ -691,7 +755,7 @@ p {
 
 .footer-fine {
   font-family: var(--font-mono);
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   color: var(--slate);
 }
 
@@ -704,7 +768,7 @@ p {
 
 .not-found h1 {
   font-size: 4rem;
-  color: var(--signal);
+  color: var(--accent1);
 }
 
 /* ---------- Responsive ---------- */

@@ -2,10 +2,10 @@ import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 
 const NAV_ITEMS = [
-  { to: '/', label: 'home' },
-    { to: '/about', label: 'about' },
-  { to: '/projects', label: 'projects' },
-  { to: '/contact', label: 'contact' },
+  { to: '/', label: 'home', icon: 'home' },
+    { to: '/about', label: 'about', icon: 'lightbulb' },
+  { to: '/projects', label: 'projects', icon: 'folder_open' },
+  { to: '/contact', label: 'contact', icon: 'mail' },
 ]
 
 export default function Header() {
@@ -35,6 +35,9 @@ export default function Header() {
                   className={({ isActive }) => (isActive ? 'active' : '')}
                   onClick={closeMenu}
                 >
+                  <span className="material-symbols-outlined nav-icon" aria-hidden="true">
+                    {item.icon}
+                  </span>
                   {item.label}
                 </NavLink>
               </li>

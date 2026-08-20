@@ -23,17 +23,12 @@ export default function About() {
           <div className="section-head">
             <span className="eyebrow">About Me</span>
             <h2>UI/UX Designer and UI Engineer with 15 years of experience</h2>
-            <p>I am a UI/UX Designer and UI Engineer with 15 years of experience creating intuitive, user-centred digital experiences across web and mobile. Combining expertise in UX design, Psychology, and full-stack development, I bridge the gap between understanding user needs and delivering effective technical solutions.
-            My skills span user research, interaction design, wire-framing, prototyping, usability testing, and full-stack development. I recently completed a Full-Stack Developer Bootcamp, strengthening my technical capabilities across HTML, CSS, JavaScript, React, Node.js, Express, REST APIs, databases, SQL, Git/GitHub, and responsive web development.
-            My Psychology background brings valuable insight into human behaviour, research methodologies, and user decision-making, helping me design experiences that are intuitive, engaging, accessible, and psychologically informed.
-            I excel at translating complex requirements into elegant, scalable digital solutions that balance user needs, technical feasibility, and business goals.</p>
-          </div>
-        </div>
-      </section>
-      <section className="section">
-        <div className="wrap">
-          <div className="section-head">
-            <span className="eyebrow">My Skills</span>
+            <p>I am a UI/UX Designer and UI Engineer with 15 years of experience creating intuitive, user-centred digital experiences across web and mobile. Combining expertise in UX design, Psychology, and full-stack development, I bridge the gap between understanding user needs and delivering effective technical solutions.</p>
+            <p>My skills span user research, interaction design, wire-framing, prototyping, usability testing, and full-stack development. I recently completed a Full-Stack Developer Bootcamp, strengthening my technical capabilities across HTML, CSS, JavaScript, React, Node.js, Express, REST APIs, databases, SQL, Git/GitHub, and responsive web development.</p>
+            <p>My Psychology background brings valuable insight into human behaviour, research methodologies, and user decision-making, helping me design experiences that are intuitive, engaging, accessible, and psychologically informed.</p>
+            <p>I excel at translating complex requirements into elegant, scalable digital solutions that balance user needs, technical feasibility, and business goals.</p>
+          
+            <span className="eyebrow m-t-2">My Skills</span>
             <h2>What I bring to a team</h2>
           </div>
           <div className="skills-grid">

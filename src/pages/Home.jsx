@@ -8,7 +8,7 @@ export default function Home() {
     <section className="hero">
         <div className="wrap hero-grid">
           <div>
-            <span className="eyebrow">available for UI UX Design / UI Engineer opportunities</span>
+            <span className="eyebrow mb-1">available for UI UX Design / UI Engineer opportunities</span>
             <h1>
               Hello, I’m Nadine, a  <span className="accent">UX Unicorn</span>
             </h1>
@@ -25,9 +25,11 @@ export default function Home() {
             </div>
             <div className="hero-social">
               <a href="https://github.com/NadineHocking/" target="_blank" rel="noreferrer">
+                <span className="material-symbols-outlined link-icon" aria-hidden="true">code</span>
                 github.com/NadineHocking
               </a>
               <a href="https://linkedin.com/in/nadine-wells/" target="_blank" rel="noreferrer">
+                <span className="material-symbols-outlined link-icon" aria-hidden="true">work</span>
                 linkedin.com/in/nadine-wells
               </a>
             </div>

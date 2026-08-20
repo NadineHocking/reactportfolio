@@ -6,7 +6,7 @@ export default function Projects() {
     <section className="section">
       <div className="wrap">
         <div className="section-head">
-          <span className="eyebrow">build log</span>
+          <span className="eyebrow">Projects</span>
           <h2>9 weeks, 9 challenges</h2>
           <p>
             Filter by technology or click any entry to open its repo and demo links. Each week

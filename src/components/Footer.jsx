@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="site-footer">
       <div className="wrap footer-grid">
-        <span className="footer-fine">© {year} Nadine Hocking — Fullstack Developer Bootcamp Portfolio built with React and deployed on Render</span>
+        <span className="footer-fine">© {year} Nadine Hocking</span>
         <ul className="footer-links">
           <li>
             <a href="https://github.com/NadineHocking/" target="_blank" rel="noreferrer">
