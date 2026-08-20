@@ -8,7 +8,7 @@ export default function Home() {
     <section className="hero">
         <div className="wrap hero-grid">
           <div>
-            <span className="eyebrow mb-1">available for UI UX Design / UI Engineer opportunities</span>
+            <span className="eyebrow mb-1">available for opportunities</span>
             <h1>
               Hello, I’m Nadine, a  <span className="accent">UX Unicorn</span>
             </h1>
@@ -33,6 +33,18 @@ export default function Home() {
                 linkedin.com/in/nadine-wells
               </a>
             </div>
+            
+          </div>
+          <div className="terminal-card">
+            <div className="terminal-dots">
+              <span /><span /><span />
+            </div>
+            <div className="line"><span className="prompt">$</span> Nadine Hocking</div>          
+            <div className="line"><span className="prompt">$</span> UI UX Designer | UI Engineer</div>
+
+            <div className="line"><span className="prompt">$</span> Full-Stack Developer Bootcamp Graduate</div>
+            <div className="line"><span className="prompt">$</span> 15 years of experience creating intuitive, user-centred digital experiences</div>
+            <div className="line"><span className="prompt">$</span> Bridging design, research and technology to deliver effective, scalable solutions</div>
           </div>
           </div>
 

@@ -135,7 +135,7 @@ p {
   font-family: var(--font-mono);
   font-size: 0.78rem;
   letter-spacing: 0.08em;
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: var(--accent1);
   display: inline-flex;
   align-items: center;
