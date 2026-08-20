@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom'
 import SkillCard from '../components/SkillCard.jsx'
+import projects from '../data/projects.js'
 
 export default function Home() {
+
      return (
     <>
     <section className="hero">
