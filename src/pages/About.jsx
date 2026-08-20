@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import SkillCard from '../components/SkillCard.jsx'
+import SkillsGrid from '../components/SkillsGrid.jsx'
 
 const SKILLS = [
   { icon: 'code', name: 'HTML & CSS', description: 'Semantic, accessible markup with responsive Flexbox and Grid layouts.', category: 'development' },
@@ -31,11 +31,8 @@ export default function About() {
             <span className="eyebrow m-t-2">My Skills</span>
             <h2>What I bring to a team</h2>
           </div>
-          <div className="skills-grid">
-            {SKILLS.map((skill) => (
-              <SkillCard key={skill.name} {...skill} />
-            ))}
-          </div>
+                    <SkillsGrid skills={SKILLS} />
+
         </div>
       </section>
 
