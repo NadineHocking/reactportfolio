@@ -1,16 +1,38 @@
-# React + Vite
+# React Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is week 9 project for the React module in the Step8up Fullstack developer bootcamp. This project is a portfolio site built with React, Vite, and React Router, showcasing the eight weekly challenges I built earlier in the course, as well as a skills page and a contact form.
 
-Currently, two official plugins are available:
+Live link: 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Pages
 
-## React Compiler
+- **Home** – intro, quick terminal-style "whoami" bit, and my three most recent weekly builds
+- **About** – everything I've picked up so far, with filters by category (dev / design / research)
+- **Projects** – the full run of all 8 weekly challenges, filterable by tech, click a card to expand it
+- **Contact** – a form (not wired to a real backend yet, just proves the state/handlers work)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Running it
 
-## Expanding the ESLint configuration
+```bash
+npm install
+npm run dev
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Opens on `localhost:5173`.
+
+## Stack notes
+
+- Vite + React, React Router for the page navigation
+- Icons are from `react-icons` — used real brand logos where they exist (GitHub, React, Sass, WordPress, etc.) and generic Material icons for everything else
+- No CSS framework, wrote the whole design system myself in `global.css` — flexbox for all the
+  layout, CSS variables for colors/fonts
+- The build log and skills grid both use the same filter pattern — chips at the top, click to filter, `useState` + `useMemo`
+
+## Things I'd still like to do
+
+- Wire the contact form to something real (e.g.Formspree)
+- Add project screenshots instead of just text summaries
+
+## Deploying
+
+Static site on Render — build command `npm run build`, publish dir `dist`. Needed a rewrite rule (`/*` → `/index.html`) so refreshing on `/projects` etc. doesn't 404.
