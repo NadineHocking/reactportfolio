@@ -134,7 +134,7 @@ p {
 .eyebrow {
   font-family: var(--font-mono);
   font-size: 0.78rem;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.05em;
   text-transform: capitalize;
   color: var(--accent1);
   display: inline-flex;
@@ -170,6 +170,16 @@ p {
 
 
 /* ---------- Header ---------- */
+
+.site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site main {
+  flex: 1 0 auto;
+}
 
 .site-header {
   position: sticky;

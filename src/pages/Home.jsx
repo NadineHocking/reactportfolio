@@ -8,12 +8,12 @@ export default function Home() {
     <section className="hero">
         <div className="wrap hero-grid">
           <div>
-            <span className="eyebrow mb-1">available for opportunities</span>
+            <span className="eyebrow mb-1">available</span>
             <h1>
-              Hello, I’m Nadine, a  <span className="accent">UX Unicorn</span>
+              Hello, I’m Nadine, a  UX Unicorn
             </h1>
             <p className="hero-lead">
-            UI/UX Designer and UI Engineer with 15 years’ experience creating intuitive, user-centred digital experiences. Combining expertise in UX design, Psychology, and full-stack development, I bridge design, research and technology to deliver effective, scalable solutions.
+            UI/UX Designer and UI Engineer with 15 years’ experience creating intuitive, user-centred digital experiences. Combining expertise in UX design, psychology, and full-stack development, I bridge design, research and technology to deliver effective, scalable solutions.
             </p>
             <div className="hero-actions">
               <Link to="/projects" className="btn btn-primary">
