@@ -19,6 +19,7 @@
   color-scheme: light;
 }
 
+
 * {
   box-sizing: border-box;
 }
@@ -241,7 +242,7 @@ p {
 
 .nav-icon {
   font-size: 18px;
-  color: var(--accent1);
+  /* color: var(--accent1); */
 }
 
 .nav-links a:hover {
@@ -253,6 +254,10 @@ p {
   color: var(--ink);
   background: var(--paper-raised);
   box-shadow: inset 0 0 0 1px var(--line);
+}
+
+.nav-links a.active .nav-icon {
+  color: var(--accent1);
 }
 
 .nav-toggle {
@@ -385,7 +390,7 @@ p {
 }
 
 .hero-social a:hover {
-  color: var(--signal);
+  color: var(--accent1);
   border-color: var(--accent1);
 }
 

@@ -48,7 +48,6 @@ const SKILLS = [
   { icon: MdSearch, name: 'UX Research Methods', description: 'Planning and running interviews, surveys, and usability tests to inform design decisions.', category: 'research' },
   { icon: MdQueryStats, name: 'Qualitative & Quantitative Analysis', description: 'Synthesizing interview themes alongside numeric survey and usage data.', category: 'research' },
   { icon: MdBarChart, name: 'Statistical Data Analysis', description: 'Descriptive and inferential statistics to validate research findings.', category: 'research' },
-  { icon: MdAnalytics, name: 'SPSS Software', description: 'Data cleaning, hypothesis testing, and statistical modelling in SPSS.', category: 'research' },
 ]
 
 export default function About() {
