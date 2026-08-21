@@ -129,9 +129,10 @@ p {
 
 .eyebrow {
   font-family: var(--font-mono);
-  font-size: 0.78rem;
+  font-size: 0.8rem;
   letter-spacing: 0.05em;
   text-transform: capitalize;
+  margin-bottom: 1rem;
   color: var(--accent1);
   display: inline-flex;
   align-items: center;
@@ -181,7 +182,6 @@ p {
   position: sticky;
   top: 0;
   z-index: 40;
-  /* background: rgba(243, 246, 251, 0.92); */
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--line);
 }
@@ -371,8 +371,8 @@ p {
 
 .hero-social {
   display: flex;
-  gap: 10px;
-  margin-top: 24px;
+  gap: 1rem;
+  margin-top: 2rem;
 }
 
 .hero-social a {
@@ -380,7 +380,7 @@ p {
   align-items: center;
   gap: 6px;
   font-family: var(--font-mono);
-  font-size: 0.78rem;
+  font-size: 0.9rem;
   color: var(--slate);
   text-decoration: none;
   border-bottom: 1px dashed var(--line);
@@ -396,9 +396,9 @@ p {
   background: var(--ink);
   color: #dce6f5;
   border-radius: 12px;
-  padding: 20px;
+  padding: 1.4rem;
   font-family: var(--font-mono);
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   box-shadow: 0 20px 40px rgba(27, 42, 74, 0.22);
 }
 
@@ -753,7 +753,7 @@ p {
   margin: 0;
   padding: 0;
   font-family: var(--font-mono);
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .footer-links a {
@@ -765,7 +765,7 @@ p {
 }
 
 .footer-links a:hover {
-  color: var(--ink);
+  color: var(--accent1);
 }
 
 .link-icon {
@@ -774,7 +774,7 @@ p {
 
 .footer-fine {
   font-family: var(--font-mono);
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   color: var(--slate);
 }
 

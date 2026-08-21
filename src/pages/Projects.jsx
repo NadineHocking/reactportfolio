@@ -9,19 +9,17 @@ export default function Projects() {
       <div className="wrap">
         <div className="section-head">
           <span className="eyebrow">Projects</span>
-          <h2>9 weeks, 9 challenges</h2>
+          <h2>My Bootcamp Projects over 9 Weeks</h2>
           <p>
-            Filter by technology or click any entry to open its repo and demo links. Each week
-            builds on the one before it.
+            Filter by technology or click any entry to open its repo and demo links. 
           </p>
         </div>
 
         <ProjectLog projects={projects} />
 
         <div className="section-head" style={{ marginTop: 64 }}>
-          <span className="eyebrow">bonus · live from GitHub</span>
+          <span className="eyebrow">live from GitHub</span>
           <h2>Latest repositories</h2>
-          <p>Pulled directly from the GitHub REST API, so this list stays current automatically.</p>
         </div>
             <GitHubRepos />
       </div>

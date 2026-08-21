@@ -24,7 +24,7 @@ export default function Home() {
                 Get in touch
               </Link>
             </div>
-            <div className="hero-social">
+            <div className="hero-social m-t-1">
               <a href="https://github.com/NadineHocking/" target="_blank" rel="noreferrer">
                 <SiGithub className="link-icon" aria-hidden="true" />
                 github.com/NadineHocking
