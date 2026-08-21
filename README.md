@@ -32,6 +32,8 @@ Opens on `localhost:5173`.
 
 - Wire the contact form to something real (e.g.Formspree)
 - Add project screenshots instead of just text summaries
+- Add all of my developement and design projects (outside of Step8Up bootcamp)
+- Add light and dark theme switcher
 
 ## Deploying
 
