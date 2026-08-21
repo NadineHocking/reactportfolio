@@ -2,7 +2,7 @@
 
 This is week 9 project for the React module in the Step8up Fullstack developer bootcamp. This project is a portfolio site built with React, Vite, and React Router, showcasing the eight weekly challenges I built earlier in the course, as well as a skills page and a contact form.
 
-Live link: 
+Live link: https://reactportfolio-4qem.onrender.com/
 
 ## Pages
 

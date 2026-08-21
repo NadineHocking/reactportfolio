@@ -95,7 +95,7 @@ const projects = [
     summary:
       'React Portfolio: A responsive, component-based react portfolio pulling every previous week together, deployed live on Render.',
     repo: 'https://github.com/NadineHocking/reactportfolio',
-    demo: '',
+    demo: 'https://reactportfolio-4qem.onrender.com/',
     status: 'shipped',
   },
 ]
