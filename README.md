@@ -6,9 +6,9 @@ Live link:
 
 ## Pages
 
-- **Home** – intro, quick terminal-style "whoami" bit, and my three most recent weekly builds
+- **Home** – intro with links to social media and portfolio / contact page
 - **About** – everything I've picked up so far, with filters by category (dev / design / research)
-- **Projects** – the full run of all 8 weekly challenges, filterable by tech, click a card to expand it
+- **Projects** – the full run of all 9 weekly challenges, filterable by tech, click a card to expand it
 - **Contact** – a form (not wired to a real backend yet, just proves the state/handlers work)
 
 ## Running it
