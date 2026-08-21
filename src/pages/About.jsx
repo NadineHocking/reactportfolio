@@ -1,28 +1,54 @@
-import { Link } from 'react-router-dom'
 import SkillsGrid from '../components/SkillsGrid.jsx'
+import {
+  SiHtml5,
+  SiJavascript,
+  SiReact,
+  SiMongodb,
+  SiGit,
+  SiSass,
+  SiWordpress,
+  SiPython,
+  SiBootstrap,
+  SiFigma,
+} from 'react-icons/si'
+import {
+  MdApi,
+  MdTableChart,
+  MdSyncAlt,
+  MdLock,
+  MdExtension,
+  MdPalette,
+  MdGridView,
+  MdAccessibilityNew,
+  MdSearch,
+  MdQueryStats,
+  MdBarChart,
+  MdAnalytics,
+} from 'react-icons/md'
 
 const SKILLS = [
-  { icon: 'code', name: 'HTML & CSS', description: 'Semantic, accessible markup with responsive Flexbox and Grid layouts.', category: 'development' },
-  { icon: 'javascript', name: 'JavaScript (ES6+)', description: 'DOM manipulation, async/await, array and object methods.', category: 'development' },
-  { icon: 'account_tree', name: 'React', description: 'Component architecture, hooks, props/state, and React Router.', category: 'development' },
-  { icon: 'api', name: 'REST APIs', description: 'Consuming and building RESTful services with fetch and Express.', category: 'development' },
-  { icon: 'storage', name: 'Databases', description: 'CRUD operations and schema design with MongoDB.', category: 'development' },
-  { icon: 'rocket_launch', name: 'Git & Deployment', description: 'Version control workflows and shipping live apps on Render.', category: 'development' },
-  { icon: 'css', name: 'Sass / SCSS', description: 'Nested rules, variables, mixins, and partials for maintainable, scalable stylesheets.', category: 'development' },
-  { icon: 'web', name: 'WordPress Theme Development', description: 'Custom theme templates, the template hierarchy, and the WordPress loop.', category: 'development' },
-  { icon: 'terminal', name: 'Python', description: 'Scripting, data handling, and backend logic with Python.', category: 'development' },
-  { icon: 'table_chart', name: 'SQL', description: 'Writing queries, joins, and schema design across relational databases.', category: 'development' },
-  { icon: 'sync_alt', name: 'ORM', description: 'Mapping application models to database tables with tools like Mongoose and Sequelize.', category: 'development' },
-  { icon: 'lock', name: 'Authentication', description: 'Session and token-based auth, password hashing, and protected routes.', category: 'development' },
-  { icon: 'extension', name: '3rd Party APIs', description: 'Integrating external services and SDKs into a working application.', category: 'development' },
-  { icon: 'grid_on', name: 'Bootstrap', description: 'Rapid, responsive layouts using a component-based CSS framework.', category: 'development' },
-  { icon: 'design_services', name: 'Figma', description: 'Wireframes, high-fidelity mockups, component libraries, and interactive prototypes.', category: 'design' },
-  { icon: 'palette', name: 'UI/UX Design', description: 'User flows, information architecture, and usability-first interface decisions.', category: 'design' },
-  { icon: 'grid_view', name: 'Design Systems', description: 'Reusable tokens and component patterns that keep a product visually consistent.', category: 'design' },
-  { icon: 'accessibility_new', name: 'Accessibility', description: 'Designing and building for keyboard, screen-reader, and contrast-aware use.', category: 'design' },
-  { icon: 'search', name: 'UX Research Methods', description: 'Planning and running interviews, surveys, and usability tests to inform design decisions.', category: 'research' },
-  { icon: 'query_stats', name: 'Qualitative & Quantitative Analysis', description: 'Synthesizing interview themes alongside numeric survey and usage data.', category: 'research' },
-  { icon: 'bar_chart', name: 'Statistical Data Analysis', description: 'Descriptive and inferential statistics to validate research findings.', category: 'research' },
+  { icon: SiHtml5, name: 'HTML & CSS', description: 'Semantic, accessible markup with responsive Flexbox and Grid layouts.', category: 'development' },
+  { icon: SiJavascript, name: 'JavaScript (ES6+)', description: 'DOM manipulation, async/await, array and object methods.', category: 'development' },
+  { icon: SiReact, name: 'React', description: 'Component architecture, hooks, props/state, and React Router.', category: 'development' },
+  { icon: MdApi, name: 'REST APIs', description: 'Consuming and building RESTful services with fetch and Express.', category: 'development' },
+  { icon: SiMongodb, name: 'Databases', description: 'CRUD operations and schema design with MongoDB.', category: 'development' },
+  { icon: SiGit, name: 'Git & Deployment', description: 'Version control workflows and shipping live apps on Render.', category: 'development' },
+  { icon: SiSass, name: 'Sass / SCSS', description: 'Nested rules, variables, mixins, and partials for maintainable, scalable stylesheets.', category: 'development' },
+  { icon: SiWordpress, name: 'WordPress Theme Development', description: 'Custom theme templates, the template hierarchy, and the WordPress loop.', category: 'development' },
+  { icon: SiPython, name: 'Python', description: 'Scripting, data handling, and backend logic with Python.', category: 'development' },
+  { icon: MdTableChart, name: 'SQL', description: 'Writing queries, joins, and schema design across relational databases.', category: 'development' },
+  { icon: MdSyncAlt, name: 'ORM', description: 'Mapping application models to database tables with tools like Mongoose and Sequelize.', category: 'development' },
+  { icon: MdLock, name: 'Authentication', description: 'Session and token-based auth, password hashing, and protected routes.', category: 'development' },
+  { icon: MdExtension, name: '3rd Party APIs', description: 'Integrating external services and SDKs into a working application.', category: 'development' },
+  { icon: SiBootstrap, name: 'Bootstrap', description: 'Rapid, responsive layouts using a component-based CSS framework.', category: 'development' },
+  { icon: SiFigma, name: 'Figma', description: 'Wireframes, high-fidelity mockups, component libraries, and interactive prototypes.', category: 'design' },
+  { icon: MdPalette, name: 'UI/UX Design', description: 'User flows, information architecture, and usability-first interface decisions.', category: 'design' },
+  { icon: MdGridView, name: 'Design Systems', description: 'Reusable tokens and component patterns that keep a product visually consistent.', category: 'design' },
+  { icon: MdAccessibilityNew, name: 'Accessibility', description: 'Designing and building for keyboard, screen-reader, and contrast-aware use.', category: 'design' },
+  { icon: MdSearch, name: 'UX Research Methods', description: 'Planning and running interviews, surveys, and usability tests to inform design decisions.', category: 'research' },
+  { icon: MdQueryStats, name: 'Qualitative & Quantitative Analysis', description: 'Synthesizing interview themes alongside numeric survey and usage data.', category: 'research' },
+  { icon: MdBarChart, name: 'Statistical Data Analysis', description: 'Descriptive and inferential statistics to validate research findings.', category: 'research' },
+  { icon: MdAnalytics, name: 'SPSS Software', description: 'Data cleaning, hypothesis testing, and statistical modelling in SPSS.', category: 'research' },
 ]
 
 export default function About() {
@@ -42,7 +68,7 @@ export default function About() {
             <span className="eyebrow m-t-2">My Skills</span>
             <h2>What I bring to a team</h2>
           </div>
-                    <SkillsGrid skills={SKILLS} />
+            <SkillsGrid skills={SKILLS} />
 
         </div>
       </section>

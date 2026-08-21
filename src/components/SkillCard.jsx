@@ -1,9 +1,7 @@
-export default function SkillCard({ icon, name, description }) {
+export default function SkillCard({ icon: Icon, name, description }) {
   return (
     <div className="skill-card">
-      <span className="material-symbols-outlined skill-icon" aria-hidden="true">
-        {icon}
-      </span>
+      <Icon className="skill-icon" aria-hidden="true" />
       <h3>{name}</h3>
       <p>{description}</p>
     </div>

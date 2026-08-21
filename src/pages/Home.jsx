@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
-import projects from '../data/projects.js'
+import { SiGithub } from 'react-icons/si'
+import { FaLinkedin } from 'react-icons/fa'
 
 export default function Home() {
 
@@ -25,11 +26,11 @@ export default function Home() {
             </div>
             <div className="hero-social">
               <a href="https://github.com/NadineHocking/" target="_blank" rel="noreferrer">
-                <span className="material-symbols-outlined link-icon" aria-hidden="true">code</span>
+                <SiGithub className="link-icon" aria-hidden="true" />
                 github.com/NadineHocking
               </a>
               <a href="https://linkedin.com/in/nadine-wells/" target="_blank" rel="noreferrer">
-                <span className="material-symbols-outlined link-icon" aria-hidden="true">work</span>
+                <FaLinkedin className="link-icon" aria-hidden="true" />
                 linkedin.com/in/nadine-wells
               </a>
             </div>

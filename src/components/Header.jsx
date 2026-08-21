@@ -1,12 +1,14 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
+import { MdHome, MdBuild, MdFolderOpen, MdMail } from 'react-icons/md'
 
 const NAV_ITEMS = [
-  { to: '/', label: 'home', icon: 'home' },
-    { to: '/about', label: 'about', icon: 'lightbulb' },
-  { to: '/projects', label: 'projects', icon: 'folder_open' },
-  { to: '/contact', label: 'contact', icon: 'mail' },
+  { to: '/', label: 'home', icon: MdHome },
+  { to: '/about', label: 'about', icon: MdBuild },
+  { to: '/projects', label: 'projects', icon: MdFolderOpen },
+  { to: '/contact', label: 'contact', icon: MdMail },
 ]
+
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -35,9 +37,7 @@ export default function Header() {
                   className={({ isActive }) => (isActive ? 'active' : '')}
                   onClick={closeMenu}
                 >
-                  <span className="material-symbols-outlined nav-icon" aria-hidden="true">
-                    {item.icon}
-                  </span>
+                  <item.icon className="nav-icon" aria-hidden="true" />
                   {item.label}
                 </NavLink>
               </li>
